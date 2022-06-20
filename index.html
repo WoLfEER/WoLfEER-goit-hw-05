@@ -20,6 +20,11 @@
   </head>
 
   <body>
+
+    <div class="modal">
+      <div class="backdrop is-hidden">
+        <div class="modal-window">Lorem ipsum dolor sit amet.</div>
+      </div>
     
     <!-- HEADER-->
     <header class="page-header">
@@ -32,7 +37,7 @@
 
           <ul class="side-nav">
             <li class="nav-list">
-              <a class="link current" href="./">Студия</a>
+              <a class="link current studio" href="./">Студия</a>
             </li>
             <li class="nav-list">
               <a class="link" href="./portfolio.html">Портфолио</a>
@@ -65,52 +70,56 @@
     <!-- MAIN SECTION-->
 
     <main>
+     
       <!-- hero -->
 
-      <section class="hero background">
-        <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button primary" type="button">Заказать услугу</button>
-          
-        </div>
-      </section>
 
-      <!-- ADVANTAGES SECTION-->
-      <section class="advantages section">
-        <h2 hidden>Преемущества</h2>
-        <div class="container">
-          <ul class="advatages-list">
-            <li class="item-adv-list">
-              <h3 class="advantages-title">Внимание к деталям</h3>
-              <p class="advantages-par">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="item-adv-list time">
-              <h3 class="advantages-title">Пунктуальность</h3>
-              <p class="advantages-par">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="item-adv-list diagram">
-              <h3 class="advantages-title">Планирование</h3>
-              <p class="advantages-par">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="item-adv-list cosmos">
-              <h3 class="advantages-title">Современные технологии</h3>
-              <p class="advantages-par">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+   
+  <section class="hero background">
+    <div class="container">
+      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <button class="button primary" type="button">Заказать услугу</button>
+      
+    </div>
+  </section>
+
+  <!-- ADVANTAGES SECTION-->
+  <section class="advantages section">
+    <h2 hidden>Преемущества</h2>
+    <div class="container">
+      <ul class="advatages-list">
+        <li class="item-adv-list">
+          <h3 class="advantages-title">Внимание к деталям</h3>
+          <p class="advantages-par">
+            Идейные соображения, а также начало повседневной работы по
+            формированию позиции.
+          </p>
+        </li>
+        <li class="item-adv-list time">
+          <h3 class="advantages-title">Пунктуальность</h3>
+          <p class="advantages-par">
+            Задача организации, в особенности же рамки и место обучения
+            кадров влечет за собой.
+          </p>
+        </li>
+        <li class="item-adv-list diagram">
+          <h3 class="advantages-title">Планирование</h3>
+          <p class="advantages-par">
+            Равным образом консультация с широким активом в значительной
+            степени обуславливает.
+          </p>
+        </li>
+        <li class="item-adv-list cosmos">
+          <h3 class="advantages-title">Современные технологии</h3>
+          <p class="advantages-par">
+            Значимость этих проблем настолько очевидна, что реализация
+            плановых заданий.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+ </div>
 
       <!-- pictures section-->
 
@@ -118,14 +127,19 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-list">
-            <li class="item">
+            <li class="item section-items">
               <img src="./images/box1.jpg" width="370" alt="кодинг" />
+              <div class="section-background"><p class="advantages-title white">Десктопные приложения</p> </div>
+              
             </li>
-            <li class="item">
+            <li class="item section-items">
               <img src="./images/box2.jpg" width="370" alt="Планирование" />
+              <div class="section-background"><p class="advantages-title white">Мобильные приложения</p> </div>
+              
             </li>
-            <li class="item">
+            <li class="item section-items">
               <img src="./images/box3.jpg" width="370" alt="дизайн" />
+              <div class="section-background"><p class="advantages-title white">Дизайнерские решения</p> </div>
             </li>
           </ul>
         </div>

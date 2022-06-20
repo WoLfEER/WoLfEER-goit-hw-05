@@ -112,12 +112,37 @@ img {
 
 .side-nav .link.current {
   color: var(--accent-color);
+  position: relative;
 }
+
 
 .side-nav .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
+
+.side-nav .link.current::after{
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: var(--accent-color);
+  width: 78px;height: 4px;
+  border-radius: 2px;
+}
+
+.side-nav .link.current.studio::after {
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: var(--accent-color);
+  width: 48px;height: 4px;
+  border-radius: 2px;
+}
+
 
 /* login-nav */
 
@@ -164,6 +189,37 @@ img {
   
 .login-link {
   margin-right: 10px;
+}
+
+
+.modal {
+  position: relative;
+}
+
+.backdrop {
+  position:absolute;
+  width: 528px;
+  height: 581px;
+  background-color: rgba(0, 0, 0, 0.2);;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+
+.modal-window {
+  background-color: #ffffff;
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
@@ -295,6 +351,22 @@ img {
  .section-list .item {
   width: calc((100% - 2 * 30px) / 3);
   margin: 15px;
+}
+
+.section-items {
+  position: relative;
+}
+
+.section-background {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 27px ;
+  width: 370px;
+  height: 70px;
+  background-color:rgba(47, 48, 58, 0.8);
 }
 
 /* team */
@@ -581,6 +653,8 @@ background-color: var(--accent-color);
   line-height: 1.88;
 }
 
+
+
 .image-list {
   display: flex;
   flex-wrap: wrap;
@@ -592,6 +666,37 @@ background-color: var(--accent-color);
   /* background-color: tomato; */
   margin: 15px;
 }
+
+.flex-item {
+  position: relative;
+}
+
+.card-subtitle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  text-align: center;
+  opacity: 0;
+}
+
+.white-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: #ffffff;
+}
+
+
+.flex-item:hover .card-subtitle,
+.flex-item:focus {
+  opacity: 1;
+}
+
 
 /* logo */
 
