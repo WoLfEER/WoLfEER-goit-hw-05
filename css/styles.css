@@ -341,12 +341,16 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover,
-.team-link:focus {
+.team-link:focus,
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   background-color: var(--accent-color);
+  fill: #ffffff;
 }
 
 .team-list .team-item + .team-item {
@@ -403,6 +407,7 @@ img {
   height: 92px;
   justify-content: center;
   align-items: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo-icon {
@@ -420,7 +425,6 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -677,7 +681,9 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   border: 0;
-  transition: box-shadow, background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover,
@@ -717,7 +723,8 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
