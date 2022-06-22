@@ -222,22 +222,22 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/antenna.png);
+  background-image: url(../images/antenna.svg);
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-adv-list.diagram::before {
-  background-image: url(../images/diagram.png);
+  background-image: url(../images/diagram.svg);
 }
 
 .item-adv-list.time::before {
-  background-image: url(../images/clock.png);
+  background-image: url(../images/clock1.svg);
 }
 
 .item-adv-list.cosmos::before {
-  background-image: url(../images/astronaut.png);
+  background-image: url(../images/astronaut.svg);
 }
 
 .advatages-list {
